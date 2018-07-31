@@ -1,0 +1,27 @@
+<p>
+  lista works!
+</p>
+
+<div>
+
+  <form (submit)="addUser(newUser)">
+    <input type="text" #newUser >
+    <button>
+      send user
+    </button>
+  </form>
+
+  <h1>Lista de usuarios:</h1>
+  <ul> 
+      <li *ngFor="let user of users"> 
+        {{user}}
+        <button (click)="deleteUser(user)"> 
+            Delete!
+        </button>
+      </li>
+  </ul>
+  
+  <button (click)="sayHello()"> 
+    click me!
+  </button>
+</div>

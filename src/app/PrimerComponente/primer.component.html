@@ -1,0 +1,13 @@
+<h1> Datos de Leonardo </h1>
+
+<div>
+    <p>name: {{name}}</p>
+    <p>Street: {{addres.street}}</p>
+    <p>City: {{addres.city}}</p>
+    <p>Hobbies:</p>
+    <ul> 
+        <li *ngFor="let hobby of hobbies"> 
+            {{hobby}}
+        </li>
+    </ul> 
+</div>
